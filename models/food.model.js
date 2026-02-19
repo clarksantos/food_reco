@@ -21,7 +21,7 @@ const getFoodsByCuisine = async (cuisine) => {
         "SELECT * FROM tbl_food WHERE cuisine = ?",
         [cuisine]
     );
-    return rows[0];
+    return rows;
 };
 
 // GET FOOD BY DIFFICULTY
@@ -30,7 +30,7 @@ const getFoodsByDifficulty = async (difficulty) => {
         "SELECT * FROM tbl_food WHERE difficulty = ?",
         [difficulty]
     );
-    return rows[0];
+    return rows;
 };
 
 // GET FOOD BY INGREDIENTS
